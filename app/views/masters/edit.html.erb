@@ -1,0 +1,19 @@
+<h1>Pokedex</h1>
+
+<%= form_with scope: :master, url: master_path, method: "put", local: true do |form| %>
+
+  <%= form.collection_select :pokemon_id, @pokemons, :id, :name %>
+
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_area :name %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
+<td><%= link_to 'delete', master_path(@master),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %></td>

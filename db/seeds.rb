@@ -25,3 +25,13 @@ json['pokemon'].each do |item|
   new_pokemon.spawn_time = item['spawn_time']
   new_pokemon.save
 end
+
+new_master = Master.new
+new_master.name = 'Cyrill'
+new_master.pokemon_id = 1
+new_master.save
+
+new_master = Master.new
+new_master.name = 'Adna'
+new_master.pokemon_id = 2
+new_master.save

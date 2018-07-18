@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root 'main#index'
+  root "masters#index"
+
+  resources :masters
 
   get 'pokemon/:id/read' => 'pokemons#show_details'
   get 'pokemon/create' => 'pokemons#create_form'
