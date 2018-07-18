@@ -1,4 +1,4 @@
-class PokemonController < ApplicationController
+class PokemonsController < ApplicationController
   def show_details
     @pokemon = Pokemon.find( Integer(params[:id]) )
   end
