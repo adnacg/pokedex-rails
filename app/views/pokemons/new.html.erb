@@ -1,6 +1,6 @@
 <h1>Pokedex</h1>
 
-<%= form_for :pokemon do |f| %>
+<%= form_with scope: :pokemon, url: pokemons_path, local: true do |f| %>
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>

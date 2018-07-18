@@ -12,6 +12,7 @@ class MastersController < ApplicationController
   end
 
   def new
+
     @pokemons = Pokemon.all
   end
 

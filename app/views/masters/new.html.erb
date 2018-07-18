@@ -2,6 +2,7 @@
 
 <%= form_with scope: :master, url: masters_path, local: true do |form| %>
 
+
   <%= form.collection_select :pokemon_id, @pokemons, :id, :name %>
 
   <p>
